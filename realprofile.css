@@ -1,0 +1,246 @@
+/*My font link */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/*seperators*/
+.span-abt {
+    color: #f9ac54;
+    font-family: "Satisfy", cursive;
+}
+
+.seperator {
+    left: 0;
+    top: 50%;
+    width: 27.7%;
+    height: 1px;
+    background: #f9ac54;
+}
+
+.seperator2 {
+    margin-left: 36.5%;
+    left: 0;
+    top: 50%;
+    width: 26.9%;
+    height: 1px;
+    background: #f9ac54;
+}
+
+.seperator3 {
+    margin-left: 0;
+    left: 0;
+    top: 50%;
+    width: 100.9%;
+    height: 1px;
+    background: #f9ac54;
+}
+
+.seperator4 {
+    margin-left: 46.5%;
+    left: 0;
+    top: 50%;
+    width: 16.3%;
+    height: 1px;
+    background: #f9ac54;
+    
+}
+
+.seperator5 {
+    margin-left: 40.9%;
+    left: 0;
+    top: 50%;
+    width: 18.4%;
+    height: 1px;
+    background: #f9ac54;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+html,
+body {
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    background: #101820;
+
+    height: 100%;
+    margin: 0;
+    scroll-snap-type: y mandatory; 
+    scroll-behavior: smooth;       
+    overflow-y: auto;
+}
+
+section {
+  scroll-snap-align: start;      
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: black;
+    padding: 25px 20px;
+    transition: all 0.4s ease;
+}
+
+.sidebar:hover {
+    width: 210px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-header img {
+    width: 52px;
+    border-radius: 20%;
+}
+
+.sidebar-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 23px;
+}
+
+.sidebar-links {
+    list-style: none;
+    margin-top: 20px;
+    height: 80%;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.sidebar-links h4 {
+    color: white;
+    font-weight: 500;
+    margin: 10px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.sidebar-links h4 span {
+    opacity: 0;
+}
+
+.sidebar:hover .sidebar-links h4 span {
+    opacity: 1;
+}
+
+.sidebar-links .menu-seperator {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(1);
+    transform: scaleY(-50%);
+    background: #FEE715;
+    transform-origin: right;
+    transition-duration: 0.2s;
+}
+
+.sidebar:hover .sidebar-links .menu-seperator {
+    transition-delay: 0s;
+    transform: scaleX(0);
+}
+
+.sidebar-links li a {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    color: white;
+    font-weight: 500;
+    padding: 15px 10px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar-links li a:hover {
+    background: #ffbf00;
+    color: black;
+    border-radius: 4px;
+}
+
+.user-account {
+    margin-top: auto;
+    padding: 12px 10px;
+    margin-left: -23px;
+}
+
+.user-account .user-profile {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.user-profile img {
+    width: 70px;
+    border-radius: 20%;
+}
+
+.user-detail {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.user-profile h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.user-profile span {
+    font-size: 0.775rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 0;
+}
+
+.sidebar:hover .user-account {
+    background: white;
+    border-radius: 10px;
+}
+
+.sidebar:hover .user-profile h3 {
+    color: black;
+}
+
+.sidebar:hover .user-profile span {
+    color: black;
+}
+
+/*---------------profile----------------*/
+.profile-box {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    box-shadow: 0 4px 10px #f9ac54;
+    margin: 20px;
+}
+
+.profile-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.profile-box p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}

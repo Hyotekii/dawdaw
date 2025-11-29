@@ -1,0 +1,294 @@
+/*My font link */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/*seperators*/
+.span-abt {
+    color: #f9ac54;
+    font-family: "Satisfy", cursive;
+}
+
+.seperator {
+    margin-left: 1px;
+    left: 0;
+    top: 50%;
+    width: 22.9%;
+    height: 1px;
+    background: #f9ac54;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+html,
+body {
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    background: #101820;
+
+    height: 100%;
+    margin: 0;
+    scroll-snap-type: y mandatory; 
+    scroll-behavior: smooth;       
+    overflow-y: auto;
+}
+
+section {
+  scroll-snap-align: start;      
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: black;
+    padding: 25px 20px;
+    transition: all 0.4s ease;
+}
+
+.sidebar:hover {
+    width: 210px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-header img {
+    width: 52px;
+    border-radius: 20%;
+}
+
+.sidebar-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 23px;
+}
+
+.sidebar-links {
+    list-style: none;
+    margin-top: 20px;
+    height: 80%;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.sidebar-links h4 {
+    color: white;
+    font-weight: 500;
+    margin: 10px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.sidebar-links h4 span {
+    opacity: 0;
+}
+
+.sidebar:hover .sidebar-links h4 span {
+    opacity: 1;
+}
+
+.sidebar-links .menu-seperator {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(1);
+    transform: scaleY(-50%);
+    background: #FEE715;
+    transform-origin: right;
+    transition-duration: 0.2s;
+}
+
+.sidebar:hover .sidebar-links .menu-seperator {
+    transition-delay: 0s;
+    transform: scaleX(0);
+}
+
+.sidebar-links li a {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    color: white;
+    font-weight: 500;
+    padding: 15px 10px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar-links li a:hover {
+    background: #ffbf00;
+    color: black;
+    border-radius: 4px;
+}
+
+.user-account {
+    margin-top: auto;
+    padding: 12px 10px;
+    margin-left: -23px;
+}
+
+.user-account .user-profile {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.user-profile img {
+    width: 70px;
+    border-radius: 20%;
+}
+
+.user-detail {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.user-profile h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.user-profile span {
+    font-size: 0.775rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 0;
+}
+
+.sidebar:hover .user-account {
+    background: white;
+    border-radius: 10px;
+}
+
+.sidebar:hover .user-profile h3 {
+    color: black;
+}
+
+.sidebar:hover .user-profile span {
+    color: black;
+}
+
+/*---------------trainers css------------------*/
+.trainer {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;         
+    width: 100%;
+    margin-left: 120px;         
+    padding: 50px 0;
+    gap: 40px;                      
+}
+
+.trainer-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainer-content .title1 {
+    color: #f9ac54;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.trainer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    margin-top: 20px;
+    width: 400px;
+    height: 350px;
+    background: #101820;
+    box-shadow: 0px 4px 8px #f9ac54;
+}
+
+.trainer-contacts h3 {
+    margin-top: 25px;
+    color: #f9ac54;
+    font-size: 1.8rem; 
+}
+
+.trainer-contacts input,
+ .trainer-contacts button {
+    width: 80%; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 10px; 
+    outline: none; 
+    transition: 0.6s; 
+}
+
+.trainer-contacts input:hover { 
+    color:#f9ac54; 
+    background: #101820; 
+    box-shadow: 0px 2px 2px #f9ac54; 
+}
+
+.trainer-contacts button { 
+    background: #f9ac54; 
+    color: black; 
+    cursor: pointer; 
+    font-weight: 600; 
+} 
+
+.trainer-contacts button:hover { 
+    color: #f9ac54; 
+    background: #101820; 
+    border: 1px solid #f9ac54; 
+}
+
+.trainer-recruit {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #101820;
+    box-shadow: 0px 4px 8px #f9ac54;
+    border-radius: 20px;
+    width: 0px;
+    min-height: 350px;
+    margin-right: 20%;
+    margin-top: 4%;
+}
+
+.trainer-recruit .title2 {
+    color: #f9ac54;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.trainer-recruit ul {
+    list-style: none;
+    padding: 0;
+    width: 500px;
+}
+
+.trainer-recruit ul li {
+    color: white;
+    background: #151f28;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 3px #f9ac54;
+}

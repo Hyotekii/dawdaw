@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+ 
+    <!--------css link--------->
+    <link rel="stylesheet" href="programs.css">
+    <!------------navbar icon/font link-------------->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <!--font for idk words-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+   <section class="home" id="home">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="AFitPics/NewAFITSLogo.jpg" alt="Logo">
+            <h2>AThenics</h2>
+        </div>
+       <ul class="sidebar-links">
+        <h4>
+            <span>Main Menu</span>
+            <div class="menu-seperator"></div>
+        </h4>
+         <li>
+            <a href="index.html">
+               <span class="material-symbols-outlined">
+                  home
+               </span>
+              Home
+            </a>
+         </li>
+         <li>
+            <a href="programs.html">
+               <span class="material-symbols-outlined">
+                  exercise
+               </span>
+              Program
+            </a>
+         </li>
+         <li>
+            <a href="trainer.html">
+               <span class="material-symbols-outlined">
+                  contact_phone
+               </span>
+              Online Trainers
+            </a>
+         </li>
+         <li>
+            <a href="community.html">
+               <span class="material-symbols-outlined">
+                  diversity_3
+               </span>
+              Community
+            </a>
+         </li>
+         <li>
+            <a href="#">
+               <span class="material-symbols-outlined">
+                  local_mall
+               </span>
+              Shop
+            </a>
+         </li>
+         <li>
+            <a href="#">
+               <span class="material-symbols-outlined">
+                  info
+               </span>
+              About
+            </a>
+         </li>
+         <li>
+            <a href="#">
+               <span class="material-symbols-outlined">
+                  call_log
+               </span>
+              Contact Us
+            </a>
+         </li>
+           <h4>
+              <span>Account</span>
+              <div class="menu-seperator"></div>
+           </h4>
+         <li>
+            <a href="profile.html">
+               <span class="material-symbols-outlined">
+                  account_circle
+               </span>
+              Login/Sign up
+            </a>
+         </li>
+       </ul> 
+      <div class="user-account">
+        <div class="user-profile">
+            <img src="AFitPics/MyProfilePic.jpg" alt="MyProfile">
+            <div class="user-detail">
+                <h3>Aim Cosa</h3>
+                <span>Web Developer</span>
+            </div>
+        </div>
+      </div> 
+    </aside>
+
+    <!------calithenics scheds--------->
+    <main class="content">
+  <h1 class="program-title">Schedules</h1>
+  <div class="seperator"></div>
+
+<div class="schedules-container">
+  <div class="schedule-block">
+    <h2>
+      Recommended
+      <span class="tooltip">?
+      <span class="tooltip-text">This is a standard workout plan everyone can use. (you can click the days to watch tutorials)</span>
+    </span>
+    </h2>
+
+    <table class="program-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Workout</th>
+        </tr>
+      </thead>
+      <tbody>
+  <tr><td><a href="monday.html">Monday</a></td><td>Push (Push-ups, Dips, Pike Push-ups)</td></tr>
+  <tr><td><a href="tuesday.html">Tuesday</a></td><td>Pull (Pull-ups, Chin-ups, Australian Rows)</td></tr>
+  <tr><td><a href="wednesday.html">Wednesday</a></td><td>Legs (Squats, Lunges, Calf Raises)</td></tr>
+  <tr><td><a href="thursday.html">Thursday</a></td><td>Core (Plank, Hanging Knee Raises, Leg Raises)</td></tr>
+  <tr><td><a href="friday.html">Friday</a></td><td>Push (Incline Push-ups, Dips, Handstand Work)</td></tr>
+  <tr><td><a href="saturday.html">Saturday</a></td><td>Pull + Core (Pull-ups, Rows, L-sit)</td></tr>
+  <tr><td><a href="sunday.html">Sunday</a></td><td>Rest / Active Recovery (Stretching, Light Jog)</td></tr>
+</tbody>
+    </table>
+  </div>
+
+  <!-- Middle: Form -->
+  <div class="schedule-block form-block">
+    <h2>Create Your Own</h2>
+    <form id="customForm">
+      <label for="day">Day:</label>
+      <select id="day" required>
+        <option value="">Select Day</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+      </select>
+
+      <label for="workout">Workout:</label>
+      <input type="text" id="workout" placeholder="Enter workout" required>
+
+      <button type="submit">Add</button>
+    </form>
+  </div>
+
+ <!--------sched na walang lamen----------> 
+  <div class="schedule-block">
+    <h2>
+      Custom Schedule
+      <span class="tooltip">?
+      <span class="tooltip-text">You can share this program with other by pressin share.(others can see this on community section)</span>
+    </span>
+    </h2>
+    <table class="program-table" id="customTable">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Workout</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Monday</td><td></td></tr>
+        <tr><td>Tuesday</td><td></td></tr>
+        <tr><td>Wednesday</td><td></td></tr>
+        <tr><td>Thursday</td><td></td></tr>
+        <tr><td>Friday</td><td></td></tr>
+        <tr><td>Saturday</td><td></td></tr>
+        <tr><td>Sunday</td><td></td></tr>
+      </tbody>
+    </table>
+
+    <button class="share-btn" onclick="shareSchedule()">Share</button>
+
+  </div>
+</div>
+</main>
+  </section> 
+
+  <script src="programs.js"></script>
+  <script src="profile.js" defer></script>
+</body>
+</html>
